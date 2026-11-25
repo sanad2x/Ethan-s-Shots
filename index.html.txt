@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Ethan’s shot</title>
+<meta property="og:title" content="Ethan’s shot"><meta property="og:image" content="images/sunset.jpg">
+<style>
+html, body, #root { margin: 0; min-height: 100%; }
+body { background: #0b0d12; }
+.es-page { background: #0b0d12; color: #f3efe8; min-height: 100vh; font-family: Georgia, 'Times New Roman', serif; }
+.es-hero { position: relative; height: clamp(380px, 85vw, 640px); overflow: hidden; }
+.es-hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 50% 85%; }
+.es-hero-shade { position: absolute; inset: 0; background: linear-gradient(180deg, rgba(11,13,18,.25) 0%, rgba(11,13,18,.1) 40%, #0b0d12 100%); }
+.es-hero-text { position: absolute; left: 0; right: 0; bottom: 0; padding: 0 24px 36px; max-width: 1100px; margin: 0 auto; box-sizing: border-box; }
+.es-kicker { margin: 0 0 8px; font: 500 12px/1.4 system-ui, sans-serif; letter-spacing: .2em; text-transform: uppercase; color: #f0c98a; }
+.es-title { margin: 0; font-weight: 400; font-style: italic; font-size: clamp(48px, 13vw, 128px); line-height: .95; letter-spacing: -.02em; }
+.es-frames { max-width: 1100px; margin: 0 auto; padding: 24px 16px 8px; display: grid; gap: 40px; box-sizing: border-box; }
+.es-frame { margin: 0; }
+.es-frame img { display: block; width: 100%; height: auto; border-radius: 4px; }
+.es-frame figcaption { display: flex; gap: 14px; align-items: baseline; padding: 12px 4px 0; }
+.es-num { font: 500 13px system-ui, sans-serif; color: #f0c98a; letter-spacing: .1em; }
+.es-cap { display: flex; flex-wrap: wrap; gap: 4px 14px; align-items: baseline; }
+.es-cap strong { font-weight: 400; font-size: 22px; }
+.es-cap em { font: 12px system-ui, sans-serif; letter-spacing: .15em; text-transform: uppercase; color: #9aa0ab; }
+.es-foot { text-align: center; padding: 48px 16px 56px; font: 12px system-ui, sans-serif; letter-spacing: .15em; text-transform: uppercase; color: #6d7480; }
+@media (min-width: 900px) {
+  .es-frames { grid-template-columns: 1fr 1fr; gap: 56px 32px; padding: 40px 24px; }
+  .es-frame:nth-child(even) { margin-top: 64px; }
+  .es-hero-text { padding-bottom: 56px; }
+}
+
+</style></head>
+<body><div id="root"><main class="es-page">
+<section class="es-hero"><img src="images/sunset.jpg" alt="" class="es-hero-img"><div class="es-hero-shade"></div>
+<div class="es-hero-text"><p class="es-kicker">One balcony. One sea. 4 moods.</p><h1 class="es-title">Ethan’s shot</h1></div></section>
+<section class="es-frames">
+    <figure class="es-frame"><img src="images/morning.jpg" alt="Deep blue sky over a calm sea and a sandy spit" loading="lazy"><figcaption><span class="es-num">01</span><span class="es-cap"><strong>Clear blue</strong><em>Midday</em></span></figcaption></figure>
+    <figure class="es-frame"><img src="images/clouds.jpg" alt="Thick grey and white clouds over the bay and rooftops" loading="lazy"><figcaption><span class="es-num">02</span><span class="es-cap"><strong>Heavy sky</strong><em>Afternoon</em></span></figcaption></figure>
+    <figure class="es-frame"><img src="images/sunset.jpg" alt="Orange light under a layer of cloud above the sea" loading="lazy"><figcaption><span class="es-num">03</span><span class="es-cap"><strong>Last light</strong><em>Sunset</em></span></figcaption></figure>
+    <figure class="es-frame"><img src="images/moon.jpg" alt="A glowing moon and its reflection on the dark sea" loading="lazy"><figcaption><span class="es-num">04</span><span class="es-cap"><strong>Moon on the water</strong><em>Night</em></span></figcaption></figure>
+</section>
+<footer class="es-foot">Same view, shot by Ethan, 4 photos</footer>
+</main></div></body></html>
